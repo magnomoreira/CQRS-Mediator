@@ -18,3 +18,6 @@ C:\Users\Administrador\Documents\dev\PadraoCQRS\PadraoCQRS\obj\Debug\netcoreapp3
 C:\Users\Administrador\Documents\dev\PadraoCQRS\PadraoCQRS\obj\Debug\netcoreapp3.1\PadraoCQRS.dll
 C:\Users\Administrador\Documents\dev\PadraoCQRS\PadraoCQRS\obj\Debug\netcoreapp3.1\PadraoCQRS.pdb
 C:\Users\Administrador\Documents\dev\PadraoCQRS\PadraoCQRS\obj\Debug\netcoreapp3.1\PadraoCQRS.genruntimeconfig.cache
+C:\Users\Administrador\Documents\dev\PadraoCQRS\PadraoCQRS\bin\Debug\netcoreapp3.1\MediatR.dll
+C:\Users\Administrador\Documents\dev\PadraoCQRS\PadraoCQRS\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Administrador\Documents\dev\PadraoCQRS\PadraoCQRS\obj\Debug\netcoreapp3.1\PadraoCQRS.csproj.CopyComplete
