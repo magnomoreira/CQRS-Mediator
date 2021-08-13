@@ -1,19 +1,17 @@
-﻿using PadraoCQRS.Domain.Commands.Request;
+﻿using MediatR;
+using PadraoCQRS.Domain.Commands.Request;
 using PadraoCQRS.Domain.Commands.Response;
 using System;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace PadraoCQRS.Domain.Handler
 {
-	public class CreateCustumerHandler : ICreateCustumerHandler
+	public class CreateCustumerHandler : IRequestHandler<CreateCustumerRequest, CreateCustumerResponse>
 	{
-		public CreateCustumerResponse Handle(CreateCustumerRequest request)
+		public Task<CreateCustumerResponse> Handle(CreateCustumerRequest request, CancellationToken cancellationToken)
 		{
-			// Verificar se o cliente ja esta cadastrado
-			// validar os dados
-			// Inserir um cliente
-			// Enviar email de boas vindas
-
-			return new CreateCustumerResponse
+			var resposta = new CreateCustumerResponse
 			{
 				Id = Guid.NewGuid(),
 				Name = "MAgno Moreira",
@@ -21,6 +19,9 @@ namespace PadraoCQRS.Domain.Handler
 				Date = DateTime.Now
 
 			};
+
+			return Task.FromResult(resposta);
+
 		}
 	}
 }

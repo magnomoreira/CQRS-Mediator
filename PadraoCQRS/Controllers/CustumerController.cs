@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MediatR;
+using Microsoft.AspNetCore.Mvc;
 using PadraoCQRS.Domain.Commands.Request;
 using PadraoCQRS.Domain.Commands.Response;
 using PadraoCQRS.Domain.Handler;
+using System.Threading.Tasks;
 
 namespace PadraoCQRS.Controllers
 {
@@ -10,11 +12,12 @@ namespace PadraoCQRS.Controllers
 	public class CustumerController : ControllerBase
 	{
 		[HttpPost]
-		public CreateCustumerResponse Create(
-			[FromServices] ICreateCustumerHandler handler,
-			[FromBody] CreateCustumerRequest command)
+		public Task <CreateCustumerResponse> Create(
+			[FromServices] IMediator mediator,
+			[FromBody] CreateCustumerRequest command
+			)
 		{
-			return handler.Handle(command);
+			return mediator.Send(command);
 		}
 	}
 }

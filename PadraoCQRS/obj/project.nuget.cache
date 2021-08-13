@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "VD/ByRqs86OLg+cxdSrtD6IR/mp/sKQMAXiq+Kld9tFgJIlE8p0ZjESrld472L6maKrRHf5WAMrHLwYRmeWR9w==",
+  "dgSpecHash": "XF5pxG2WIMPR1FIo6dkdwBumWz6h0WIGivFMl1hfxhSlf2gwW0IYoq8+nBNi8z7bdOnJkwjXFu8R2FckI3zXWg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrador\\Documents\\dev\\PadraoCQRS\\PadraoCQRS\\PadraoCQRS.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrador\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
