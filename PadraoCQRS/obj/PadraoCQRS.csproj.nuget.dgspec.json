@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrador\\Documents\\dev\\PadraoCQRS\\PadraoCQRS\\PadraoCQRS.csproj": {}
+    "C:\\Users\\Administrador\\Documents\\dev\\CQRS-Mediator\\PadraoCQRS\\PadraoCQRS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrador\\Documents\\dev\\PadraoCQRS\\PadraoCQRS\\PadraoCQRS.csproj": {
+    "C:\\Users\\Administrador\\Documents\\dev\\CQRS-Mediator\\PadraoCQRS\\PadraoCQRS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrador\\Documents\\dev\\PadraoCQRS\\PadraoCQRS\\PadraoCQRS.csproj",
+        "projectUniqueName": "C:\\Users\\Administrador\\Documents\\dev\\CQRS-Mediator\\PadraoCQRS\\PadraoCQRS.csproj",
         "projectName": "PadraoCQRS",
-        "projectPath": "C:\\Users\\Administrador\\Documents\\dev\\PadraoCQRS\\PadraoCQRS\\PadraoCQRS.csproj",
+        "projectPath": "C:\\Users\\Administrador\\Documents\\dev\\CQRS-Mediator\\PadraoCQRS\\PadraoCQRS.csproj",
         "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrador\\Documents\\dev\\PadraoCQRS\\PadraoCQRS\\obj\\",
+        "outputPath": "C:\\Users\\Administrador\\Documents\\dev\\CQRS-Mediator\\PadraoCQRS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",

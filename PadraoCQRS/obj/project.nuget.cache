@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XF5pxG2WIMPR1FIo6dkdwBumWz6h0WIGivFMl1hfxhSlf2gwW0IYoq8+nBNi8z7bdOnJkwjXFu8R2FckI3zXWg==",
+  "dgSpecHash": "H7zBMDxBUfr0yTsZmdO01pM3Np8Y4ZvxK5OyGjBg6dEpCTIhqr6pRiXRYO7USHZTRron6JsHWaOSX2++PbujSQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrador\\Documents\\dev\\PadraoCQRS\\PadraoCQRS\\PadraoCQRS.csproj",
+  "projectFilePath": "C:\\Users\\Administrador\\Documents\\dev\\CQRS-Mediator\\PadraoCQRS\\PadraoCQRS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrador\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
