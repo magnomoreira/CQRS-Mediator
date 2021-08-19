@@ -44,3 +44,8 @@ C:\Users\Administrador\Documents\dev\CQRS-Mediator\PadraoCQRS\obj\Debug\netcorea
 C:\Users\Administrador\Documents\dev\CQRS-Mediator\PadraoCQRS\obj\Debug\netcoreapp3.1\PadraoCQRS.dll
 C:\Users\Administrador\Documents\dev\CQRS-Mediator\PadraoCQRS\obj\Debug\netcoreapp3.1\PadraoCQRS.pdb
 C:\Users\Administrador\Documents\dev\CQRS-Mediator\PadraoCQRS\obj\Debug\netcoreapp3.1\PadraoCQRS.genruntimeconfig.cache
+C:\Users\Administrador\Documents\dev\CQRS-Mediator\PadraoCQRS\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Administrador\Documents\dev\CQRS-Mediator\PadraoCQRS\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Administrador\Documents\dev\CQRS-Mediator\PadraoCQRS\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Administrador\Documents\dev\CQRS-Mediator\PadraoCQRS\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Administrador\Documents\dev\CQRS-Mediator\PadraoCQRS\obj\Debug\netcoreapp3.1\PadraoCQRS.MvcApplicationPartsAssemblyInfo.cs

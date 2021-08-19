@@ -14,8 +14,8 @@ namespace PadraoCQRS.Domain.Handler
 			var resposta = new CreateCustumerResponse
 			{
 				Id = Guid.NewGuid(),
-				Name = "MAgno Moreira",
-				Email = "Magno@yahoo.com",
+				Name = request.Name,
+				Email = request.Email,
 				Date = DateTime.Now
 
 			};
