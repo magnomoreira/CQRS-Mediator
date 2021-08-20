@@ -10,13 +10,14 @@ namespace PadraoCQRS.Domain
 	{
 		public Custumer(CreateCustumerRequest requeste)
 		{
+			Id = new Guid();
 			FirstName = requeste.FirstName;
 			LastName = requeste.LastName;
 			Email = requeste.Email;
-			Date = new DateTime();
+			Date = DateTime.Now;
 		}
 
-		public int Id { get; set; }
+		public Guid Id { get; set; }
 		public int ExternalId { get; set; }
 		public string FirstName { get; set; }
 		public string LastName { get; set; }

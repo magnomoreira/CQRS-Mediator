@@ -1,10 +1,7 @@
-﻿using MediatR;
-using PadraoCQRS.Domain.Commands.Response;
-
-namespace PadraoCQRS.Domain.Commands.Request
+﻿namespace PadraoCQRS.Domain.Commands.Request
 {
 	// Requisição do cliente 
-	public class CreateCustumerRequest : IRequest<CreateCustumerResponse>
+	public class CreateCustumerRequest 
 	{
 		public string  FirstName { get; set; }
 		public string LastName { get; set; }

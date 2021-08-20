@@ -1,4 +1,3 @@
-using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Rewrite;
@@ -6,8 +5,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using PadraoCQRS.Domain.Commands;
+using PadraoCQRS.Repository;
 using System;
-using System.Reflection;
 
 namespace PadraoCQRS
 {
@@ -24,8 +24,6 @@ namespace PadraoCQRS
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddControllers();
-			services.AddMediatR(Assembly.GetExecutingAssembly());
-
 			services.AddSwaggerGen(c => {
 				c.SwaggerDoc("v1",
 					new OpenApiInfo
@@ -40,6 +38,9 @@ namespace PadraoCQRS
 						}
 					});
 			});
+
+			services.AddScoped<CustumerRepository>();
+			services.AddScoped<CreateCustumerHandler>();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -63,6 +64,7 @@ namespace PadraoCQRS
 
 			var option = new RewriteOptions();
 			option.AddRedirect("^$", "swagger");
+			app.UseRewriter(option);
 
 			app.UseAuthorization();
 

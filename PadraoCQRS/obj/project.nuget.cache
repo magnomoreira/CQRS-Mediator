@@ -1,13 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "cbMXyzGuC2ER+wY9X91xzfAybd8WI7GCvMhc0PT+OzRoivIpxEQsn5FyIEvdAMiPWeHDSK8RF0KBAXquKy+dUw==",
+  "dgSpecHash": "of3pArI2822WwuOShXAcQBnTzrtoNWGOPu+m8TqLBV5YlNUdVZMGwYNgLr1RakDfwtZDXpE0zlJKiAo9QZCEGQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrador\\Documents\\dev\\CQRS-Mediator\\PadraoCQRS\\PadraoCQRS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Administrador\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
-    "C:\\Users\\Administrador\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
-    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\swashbuckle.aspnetcore\\6.1.5\\swashbuckle.aspnetcore.6.1.5.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.1.5\\swashbuckle.aspnetcore.swagger.6.1.5.nupkg.sha512",

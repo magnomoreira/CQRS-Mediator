@@ -1,28 +1,30 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using PadraoCQRS.Domain;
+using PadraoCQRS.Domain.Commands;
 using PadraoCQRS.Domain.Commands.Request;
 using PadraoCQRS.Domain.Commands.Response;
 using PadraoCQRS.Repository;
+using System.Collections.Generic;
 
 namespace PadraoCQRS.Controllers
 {
 
 
 	[ApiController]
-	[Route("api/custumer")]
+	[Route("api/[custumer]")]
 	public class CustumerController : ControllerBase
 	{
 
-		private readonly CreateCustumerResponse _response;
+		private readonly CreateCustumerHandler _handler;
 		private readonly CustumerRepository _repository;
-		private readonly ILogger _ilogger;
+		private readonly ILogger<CustumerController> _ilogger;
 
-		public CustumerController(CreateCustumerResponse response, CustumerRepository repository, ILogger ilogger)
+		public CustumerController(CreateCustumerHandler response, CustumerRepository repository, ILogger<CustumerController> logger)
 		{
-			_response = response;
+			_handler = response;
 			_repository = repository;
-			_ilogger = ilogger;
+			_ilogger = logger;
 		}
 
 		[HttpPost]
@@ -30,19 +32,24 @@ namespace PadraoCQRS.Controllers
 		{
 
 			var custumers = new Custumer(request);
+			_repository.Save(custumers);
 
-			_response.UpdateResponse(custumers);
+			_handler.Handler(custumers);
 
 			return Ok();
 		}
 
 		[HttpGet]
+		[ProducesResponseType((200),Type = typeof(List<Custumer>))]
+		[ProducesResponseType(204)]
+		[ProducesResponseType(400)]
+		[ProducesResponseType(401)]
 		public IActionResult Get()
 		{
 
-			_repository.FindAll();
+			var custumer = _repository.FindAll();
 
-			return Ok();
+			return Ok(custumer);
 		}
 
 
