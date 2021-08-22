@@ -13,7 +13,7 @@ namespace PadraoCQRS.Domain.Commands
 		{
 			return new CreateCustumerResponse
 			{
-				Id = Guid.NewGuid(),
+				Id = custumer.Id,
 				FirstName = custumer.FirstName,
 				LastName = custumer.LastName,
 				Email = custumer.Email,
