@@ -6,11 +6,10 @@ namespace PadraoCQRS.Data
 	public class AplicationContext : DbContext
 	{
 
+		public AplicationContext() { }
+		public AplicationContext(DbContextOptions<AplicationContext> options) : base(options) { }
+
 		public DbSet<Custumer> Custumers { get; set; }
-		protected override void OnConfiguring(DbContextOptionsBuilder optionsbuilder)
-		{
-			optionsbuilder.UseSqlServer("");
-		}
 
 		protected override void OnModelCreating(ModelBuilder builder)
 		{

@@ -1,10 +1,12 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Rewrite;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using PadraoCQRS.Data;
 using PadraoCQRS.Domain.Commands;
 using PadraoCQRS.Repository;
 using System;
@@ -38,6 +40,9 @@ namespace PadraoCQRS
 						}
 					});
 			});
+
+			var connection = Configuration["SqlServerConnection:ServerConnectionString"];
+			services.AddDbContext<AplicationContext>(options => options.UseSqlServer(connection));
 
 			services.AddScoped<CustumerRepository>();
 			services.AddScoped<CreateCustumerHandler>();
