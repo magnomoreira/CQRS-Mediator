@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PadraoCQRS.Domain.Commands.Request;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -7,6 +8,14 @@ namespace PadraoCQRS.Domain
 	[Table("custumer")]
 	public class Custumer
 	{
+		public Custumer(CreateCustumerRequest request)
+		{
+			FirstName = request.FirstName;
+			LastName = request.LastName;
+			Email = request.Email;
+			Date = DateTime.Now;
+		}
+
 		[Key]
 		public int Id{ get; set; }
 		[Column("first_name")]
