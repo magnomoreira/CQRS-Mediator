@@ -10,6 +10,7 @@ namespace PadraoCQRS.Domain
 	{
 		public Custumer(CreateCustumerRequest request)
 		{
+			Id = request.Id;
 			FirstName = request.FirstName;
 			LastName = request.LastName;
 			Email = request.Email;
@@ -17,7 +18,7 @@ namespace PadraoCQRS.Domain
 		}
 
 		[Key]
-		public int Id{ get; set; }
+		public int Id { get; set; }
 		[Column("first_name")]
 		public string FirstName { get; set; }
 		[Column("last_name")]

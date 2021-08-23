@@ -1,21 +1,39 @@
-﻿using PadraoCQRS.Domain;
+﻿using PadraoCQRS.Data;
+using PadraoCQRS.Domain;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace PadraoCQRS.Repository
 {
 	public class CustumerRepository
 	{
-		public static IList<Custumer> custumers = new List<Custumer>();
+		private AplicationContext _context;
+
+		public CustumerRepository(AplicationContext context)
+		{
+			_context = context;
+		}
 
 		public IList<Custumer> FindAll()
 		{
-			return custumers;
+			return _context.Custumers.ToList();
 		}
 
-		public bool Save(Custumer custumer)
+		public Custumer Save(Custumer custumer)
 		{
-			custumers.Add(custumer);
-			return true;
+			try
+			{
+				_context.Add(custumer);
+				_context.SaveChanges();
+
+			}
+			catch (Exception)
+			{
+
+				throw;
+			}
+			return custumer;
 		}
 
 	}
